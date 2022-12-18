@@ -7,6 +7,7 @@ import { VendorComponent } from './vendor.component';
 const routes: Routes = [
   { path: "", redirectTo: ROUTING.ALL, pathMatch: "full" },
   { path: ROUTING.ALL, component: VendorComponent }
+  
 ];
 
 @NgModule({

@@ -2,11 +2,16 @@
     <div class="row">
         <div class="col-md-6">
             <h1>Parent Component</h1>
-            <app-active-vendor></app-active-vendor>
+            <app-active-vendor [vendors] = "vendors" (newItemEvent)="display($event)"></app-active-vendor>
+            <ul *ngIf="selectedVendor">
+                <li>{{selectedVendor.name}}</li>
+                <li>{{selectedVendor.age}}</li>
+                <li>{{selectedVendor.city}}</li>
+            </ul>
         </div>
         <div class="col-md-6">
             <h1>Block Vendor</h1>
-            <app-block-vendor></app-block-vendor>
+            <app-block-vendor ></app-block-vendor>
         </div>
     </div>
 </div>

@@ -1,1 +1,19 @@
-<p>block-vendor works!</p>
+<!-- <p>block-vendor works!</p> -->
+<!-- <div *ngIf="blockvendors.length() > 0">
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tr *ngIf="let item of blockvendors">
+        <td> {{item.name}} </td>
+        <td> {{item.age}} </td>
+        <td> {{item.city}} </td>
+</table>
+</div>  -->
+<li *ngIf="selectedVendor">
+    {{selectedVendor.name}} | {{selectedVendor.age}} | {{selectedVendor.city}}
+</li>
